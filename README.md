@@ -1,4 +1,9 @@
 # Projeto de Envio de Relatórios por Email
+![GitHub language count](https://img.shields.io/github/last-commit/mateushenriquedasilva/seding-reports?color=orange)
+![GitHub top language](https://img.shields.io/github/languages/top/mateushenriquedasilva/seding-reports?color=green)
+![GitHub last commit](https://img.shields.io/github/last-commit/mateushenriquedasilva/seding-reports?color=orange)
+![GitHub issues](https://img.shields.io/github/issues/mateushenriquedasilva/seding-reports?color=red)
+![GitHub license](https://img.shields.io/github/license/mateushenriquedasilva/seding-reports?color=blueviolet)
 
 Este projeto é uma aplicação Spring Boot que permite o envio de relatórios por email utilizando os serviços da Oracle Cloud Infrastructure (OCI). Os relatórios gerados são armazenados em um bucket na OCI para fácil acesso e gerenciamento.
 
