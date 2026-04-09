@@ -1,38 +1,71 @@
-# Projeto de Envio de Relatórios por Email
-![GitHub language count](https://img.shields.io/github/last-commit/mateushenriquedasilva/seding-reports?color=orange)
-![GitHub top language](https://img.shields.io/github/languages/top/mateushenriquedasilva/seding-reports?color=green)
-![GitHub last commit](https://img.shields.io/github/last-commit/mateushenriquedasilva/seding-reports?color=orange)
-![GitHub issues](https://img.shields.io/github/issues/mateushenriquedasilva/seding-reports?color=red)
-![GitHub license](https://img.shields.io/github/license/mateushenriquedasilva/seding-reports?color=blueviolet)
+# Seding Reports
 
-Este projeto é uma aplicação Spring Boot que permite o envio de relatórios por email utilizando os serviços da Oracle Cloud Infrastructure (OCI). Os relatórios gerados são armazenados em um bucket na OCI para fácil acesso e gerenciamento.
+Spring Boot application for sending email reports using Oracle Cloud Infrastructure (OCI) services.
 
-## Funcionalidades
+## Overview
 
-- Geração de relatórios em diversos formatos (PDF, Excel, etc.).
-- Envio automático de relatórios por email.
-- Armazenamento seguro de documentos em um bucket na OCI.
-- Configuração de destinatários e personalização de mensagens.
+This project demonstrates backend report delivery workflows integrated with OCI resources. It focuses on practical cloud service integration using Java and Spring Boot.
 
-## Tecnologias Utilizadas
+## Features
 
-- **Spring Boot**: Framework para desenvolvimento de aplicações Java.
-- **Oracle Cloud Infrastructure (OCI)**: Serviços para envio de emails e armazenamento em nuvem.
-- **Java**: Linguagem de programação utilizada no desenvolvimento.
+- Report generation/sending workflow
+- Email dispatch integration
+- OCI-oriented configuration and service usage
+- Maven wrapper for reproducible builds
 
-## Pré-requisitos
+## Tech Stack
 
-Antes de começar, você precisará ter:
+- Java
+- Spring Boot
+- Maven
+- Oracle Cloud Infrastructure (OCI)
 
-- JDK 11 ou superior instalado.
-- Maven instalado.
-- Uma conta na Oracle Cloud com acesso ao serviço de email e ao Object Storage.
-- Configurar as credenciais da OCI.
+## Project Structure
 
-## Licença
+- `src/`: source code
+- `pom.xml`: build and dependencies
+- `.mvn/`, `mvnw`, `mvnw.cmd`: Maven wrapper
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+## Prerequisites
 
-## Contato
+- Java 17+ (or required project version)
+- OCI credentials and configured services
+- Email sender configuration values
 
-Para mais informações ou dúvidas, entre em contato com [matheus.hsilvaa18@gmail.com]. 
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mateushenriquedasilva/seding-reports.git
+cd seding-reports
+```
+
+2. Configure OCI and email properties via environment variables or `application.properties`.
+
+3. Run the service:
+
+```bash
+./mvnw spring-boot:run
+```
+
+On Windows:
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+## Security Notes
+
+- Never commit cloud credentials to the repository
+- Use secrets managers or CI/CD secret stores in production
+
+## Roadmap
+
+- Add retry and dead-letter handling for failed sends
+- Add dashboard/metrics for report dispatch status
+- Add integration tests with mocked cloud services
+
+## License
+
+This project is available under the repository license terms.
